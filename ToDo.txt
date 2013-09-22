@@ -1,0 +1,6 @@
+-> JPEG caps images are not uploading in add-design section
+-> add hidden inputs hdnMsg and post the form and add msg to that input and retrieve on landing page
+
+$("#divMsg").html("");
+$("#divMsg").removeClass("Form-Error");
+$(location).attr("href", "projects.php");

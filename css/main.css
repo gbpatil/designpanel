@@ -1,0 +1,530 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 1.4;
+    background-color: #F1F1F1;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0px auto;
+}
+
+a{
+    color: #E61111;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #206DAC;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#container{
+	width: 1200px;
+    background-color: none;
+	border: solid 0px black;
+    margin: 0px auto;
+}
+
+#divLogin {
+    margin: 0px auto;
+    width: 350px;
+    background-color: #CCC;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+    #divLogin h2 {
+        padding: 5px;
+        margin:  0px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #divLogin label {
+        display: block;
+        padding: 5px;    
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #divLogin .divFrmElSpacer {
+        height: 10px;
+    }
+
+    #divLogin input[type="text"], #divLogin input[type="password"]{
+        display: block;
+        padding: 5px;    
+        font-size: 15px;
+        margin: 0px auto;
+    }
+
+    #divLogin input[type="submit"] {
+        display: block;
+        padding: 5px 40px;
+        font-size: 16px;
+        margin: 0px auto;
+        background-color: #37a71b;
+        border: none;
+        color: #fff;
+        font-family: inherit;
+    }
+
+#divHeader {
+    width: auto;
+    height: 100px;
+    border: solid 1px black;
+}
+
+    #divHeaderStatusPanel {
+        width: 250px;
+        height: 50px;
+        position: relative;
+        float: right;
+        color: #333; 
+        font-size: 14px;
+        margin-top: 10px;
+        border: solid 0px black;
+    }
+
+    #divHeaderLogoPanel {
+        font-size: 60px;
+        font-weight: bolder;
+        display: inline;
+        color: #555;
+        margin-left: 20px;
+    }
+
+#divHeaderMenu {
+    width: auto;
+    background-color: #ccc;
+    border-bottom: solid 1px black;
+    display: block;
+}
+
+#tblHeaderMenu {
+    border: solid 0px black;   
+    width: 100%;
+}
+
+#tblHeaderMenu th {
+    background-color: #AAA;
+    padding: 5px 50px; 
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+}
+
+#tblHeaderMenu th:hover {
+    background-color: #CCC; 
+    cursor: pointer;
+}
+
+#divLeftNav {
+    width: 200px;
+    float: left;
+    border: solid 0px black;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #CCC;
+    min-height: 380px;
+    display: inline-block;
+}
+    .divLeftNavMenuItems{
+        display: block;
+        font-size: 14px;
+        border: solid 0px black;
+        padding-bottom: 10px;
+    }
+
+#divBody {
+    width: 950px;
+    float: right;
+    background-color: #ccc;
+    border: solid 0px black;
+    min-height: 400px;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+#divFooter {
+    clear: both;
+    border: solid 1px black;
+    padding: 5px 20px;
+    text-align: right;
+}
+
+#tblProjectList {
+    width:  100%;
+    margin: 0px;
+    border: solid 1px black;
+}
+
+    #tblProjectList th {
+        padding: 10px;
+        background-color: #AAA;
+        text-transform: uppercase;
+        border: solid 1px black;
+    }    
+
+    #tblProjectList td {
+        padding: 5px;
+        border: solid 1px black;
+    }
+
+.Form-Outer-Div {
+    border: solid 0px;
+}
+
+
+#divFormCreateProject {
+    width: 500px;    
+    padding: 10px;
+}
+
+#divFormCreateProject label, input[type="text"], input[type="password"] {
+    display: block;
+    width:  300px;
+}
+
+#divFormCreateProject textarea {
+    width:  300px;
+    height: 70px;
+}
+
+#divMsg {
+    
+}
+
+.Form-Error{
+	padding: 5px;
+	background-color: #f3ed7d;
+	border: solid 0px black;
+	text-align: center;
+    color: #f00;
+    font-weight: bold;        
+}
+
+.Form-Success{
+	padding: 5px;
+	background-color: #f3ed7d;
+	border: solid 0px black;
+	text-align: center;
+    color: green;
+    font-weight: bold;        
+}
+
+/* ==========================================================================
+   General Form Styles
+   ========================================================================== */
+
+.divFrmElSpacer {
+    height:  10px;
+}
+
+.FormDiv {
+    width: 500px;    
+    padding: 10px;
+}
+
+.FormDiv label, input[type="text"], input[type="password"] {
+    display: block;
+    width:  300px;
+}
+
+.FormDiv textarea {
+    width:  300px;
+    height: 70px;
+}
+
+label {
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], textarea{
+    padding: 5px;    
+    font-size: 13px;
+}
+
+input[type="submit"]{
+    display: block;
+    padding: 10px 20px;
+    font-size: 13px;
+    background-color: #37a71b;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+input[type="submit"]:hover{
+    background-color: #59bc40;
+}
+
+input[type="file"] {
+    display: inline;
+    padding: 5px;
+    font-size: 13px;
+    background-color: #37a71b;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+input[type="file"]:hover {
+    background-color: #59bc40;
+}
+
+input[type="button"]{
+    display: inline;
+    padding: 7px 15px;
+    font-size: 13px;
+    background-color: #37a71b;
+    border: solid 0px green;
+    color: #fff;
+    font-family: inherit;
+    margin: 0px;
+}
+
+input[type="submit"]:hover{
+    background-color: #59bc40;
+}
+
+#divProgress {
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: bold;
+    color:  #37a71b;
+    background-color: black;
+    /*rgba(41, 40, 40, 0.83); --- for colored opacity */
+    opacity: 0.8;
+    z-index: 1000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 200px;
+    display: none;
+}
+
+.clsUploadButton {
+    border: none;
+    background-color: #37a71b;
+    color: #fff;
+    text-decoration: none; 
+    padding: 5px 10px;
+}
+
+.square-thumb {
+    width: 250px;
+    height: 250px;
+}
