@@ -10,7 +10,7 @@
         <?php include "inc/inc-HeadIncludes.php"; ?>
     </head>
     <body>
-        
+
         <?php include "inc/inc-NoJSMsg.php"; ?>
 
         <div id="container">
